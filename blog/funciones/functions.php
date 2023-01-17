@@ -51,4 +51,20 @@ function fecha($fecha){
 
     return $fecha;
 }
+
+function numero_paginas($post_por_pagina,$conexion){
+    $total_post = $conexion->prepare("SELECT FOUND_ROWS() as total");
+    $total_post->execute();
+    $total_post= $total_post->fetch()['total'];
+
+    $numero_paginas = ceil($total_post / $post_por_pagina);
+
+    return $numero_paginas;
+}
+
+function comprobarSession(){
+    if(!isset($_SESSION['admin'])){
+        header('Location: index' . RUTA . 'index.php');
+    }
+}
 ?>

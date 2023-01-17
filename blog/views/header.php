@@ -27,6 +27,7 @@
                     <li><a href="https://twitter.com/repeter21"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="https://www.facebook.com/pedro.murilloarnau"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="#">Contacto<i class="icono fa fa-envelope"></i></a></li>
+                    <li><a href="login.php">Login<i class="icono fa-solid fa-lock"></i></a></li>
                 </ul>
             </nav>
             </div>
